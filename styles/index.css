@@ -1,0 +1,2482 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+@font-face {
+  font-family: Futuralight;
+  src: url(../fonts/Futura-Std-Light.ttf);
+}
+@font-face {
+  font-family: Futuralightcondensed;
+  src: url(../fonts/Futura-Std-Light-Condensed.ttf);
+}
+@font-face {
+  font-family: Futuramedium;
+  src: url(../fonts/Futura-Std-Medium.ttf);
+}
+@font-face {
+  font-family: Futuraheavy;
+  src: url(../fonts/Futura-Std-Heavy.ttf);
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+.freshon-container .preloader video {
+  width: 100%;
+}
+
+.freshon-container .arrow-bottom {
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
+  text-align: center;
+  font-size: 35px;
+  position: fixed;
+  bottom: -40px;
+  border-radius: 50%;
+  right: 20px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #4CAF50;
+  cursor: pointer;
+  z-index: 99999;
+}
+.freshon-container span.arrow-bottom.arrow-up.show {
+  line-height: 35px;
+}
+.freshon-container .arrow-bottom.show  {
+  bottom: 15px;
+}
+.freshon-container .arrow-bottom:hover
+{
+  color: #FFFFFF;
+}
+.freshon-container .spaces {
+  height: 15px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
+.freshon-container {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  max-width: 1150px; 
+}
+.freshon-container .scroll-target {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  height: 100vh;
+  background: whitesmoke;
+  color: #666;
+  text-align: center;
+}
+/*@keyframes left-one {
+  from  {
+    left:-7em;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes left-one {
+  from  {
+    left:-7em;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes right-one {
+  from  {
+    left: 100%;
+  }
+  to {
+    left:-20em;
+  }
+}
+@-webkit-keyframes right-one {
+  from  {
+    left: 100%;
+  }
+  to {
+    left:-20em;
+  }
+  }*/
+  .freshon-container .scroll-target.section-one .bg-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+  .freshon-container .scroll-target.section-one .trucklogo {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .freshon-container .scroll-target.section-one .trucklogo img{
+    position: relative;
+  }
+  .freshon-container .scroll-target.section-one .subtext {
+    position: relative;
+    animation: right-one 20s linear infinite;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button  ,
+  .freshon-container .scroll-target.section-seven .app-wrapper .app-button {
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button:hover ,
+  .freshon-container .scroll-target.section-seven .app-wrapper .app-button:hover{
+    background-color: #FFFFFF;
+    color: #000;
+  }
+  .freshon-container .scroll-target.section-one .trucklogo img.truck{
+    width: 230px;
+  }
+  .freshon-container .scroll-target.section-one {
+    background: url("../images/1`.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-family: 'Futuralight',sans-serif;
+  }
+  .freshon-container .scroll-target.section-one img.truck {
+    width: 100%;
+  }
+  .freshon-container .scroll-target.section-one .title {
+    font-size: 35px;
+    margin-top: 2px;
+    float: left;
+    width: 100%;
+    color: #FFFFFF;
+  }
+  .freshon-container .scroll-target.section-one .subtext {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: normal;
+    color: #FFFFFF;
+  }
+  .freshon-container .scroll-target .bg-text {
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0 15px;
+    z-index: 1;
+  }
+  .freshon-container .scroll-target.section-one .logo {
+    margin-bottom: 25px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .freshon-container .scroll-target.section-one .logo img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper {
+    width: 100%;
+    float: left;
+    position: absolute;
+    bottom: 40px;
+    padding: 0px 15px;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button  {
+    color: #ffffff;
+  }
+  .freshon-container .scroll-target.section-two .bg-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+  .scroll-target.section-one .app-wrapper .app-button img {
+    width: 20px;  
+    margin-right: 5px; 
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button  {
+    color: #ffffff;
+    border: 2px solid #FFFFFF;
+    padding: 4px;
+    float: left;
+    font-size: 22px;
+    width: 130px;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button.android-app {
+    float: right;
+  }
+  .freshon-container .scroll-target.section-two{
+   background-color: #FFFFFF;
+   color: #000;
+   font-family: 'Futuramedium',sans-serif;
+ }
+ .freshon-container .scroll-target.section-two .bg-text {
+  color: #000;
+  font-size: 30px;
+}
+.freshon-container .scroll-target.section-two .title span {
+  font-weight: 800;
+}
+.freshon-container .owl-carousel .owl-stage {
+  margin: 0 auto;
+}
+.freshon-container .scroll-target.section-two .slider .card {
+  width: 90%;
+  box-shadow: 0 9px 18px rgba(128, 109, 109, 0.5);
+  margin: 15px auto;
+  cursor: pointer;
+}
+.freshon-container .scroll-target.section-two .slider .card img{
+  width: 100%;
+  height: 235px;
+}
+.freshon-container .scroll-target.section-two .slider .v.owl-controls {
+  display: none;
+}
+.freshon-container .scroll-target.section-two .slider  {
+  margin-top: 30px;
+}
+.freshon-container .scroll-target.section-two .bg-text .title {
+  width: 280px;
+  margin: 0 auto;
+}
+.freshon-container .scroll-target.section-three{
+ background-color: #FFFFFF;
+ color: #000;
+ font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-three .bg-text {
+  color: #FFFFFF;
+  font-size: 30px;
+  padding: 0;
+}
+.freshon-container .scroll-target.section-three .bg-text .title-image{
+  color: #FFFFFF;
+  font-size: 30px;
+  background: url("../images/2`.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-position: center;
+  font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-three .title-image:after {
+  background-color: rgba(0,0,0,0.5);
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.freshon-container .scroll-target.section-three .bg-text .title-image .title {
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  width: 300px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+.freshon-container .scroll-target.section-three .slider .card {
+  width: 90%;
+  margin: 15px auto;
+  box-shadow: 0 9px 18px rgba(128, 109, 109, 0.5);
+  cursor: pointer;
+  margin-top: 20px;
+}
+.freshon-container .scroll-target.section-three .slider .card img{
+  width: 100%;
+}
+.freshon-container .scroll-target.section-three .slider .v.owl-controls {
+  display: none;
+}
+.freshon-container .scroll-target.section-three .slider  {
+  margin-top: 10px;
+}
+.freshon-container .scroll-target.section-four{
+ background-color: #FFFFFF;
+ color: #000;
+ font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-four .bg-text {
+  color: #FFFFFF;
+  font-size: 30px;
+  padding: 0;
+}
+.freshon-container .scroll-target.section-four .bg-text .title-image{
+  color: #FFFFFF;
+  font-size: 30px;
+  background: url("../images/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-position: center;
+  font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-four .title-image:after {
+  background-color: rgba(0,0,0,0.5);
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.freshon-container .scroll-target.section-four .bg-text .title-image .title {
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  width: 300px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+.freshon-container .scroll-target.section-four .slider .card {
+  width: 90%;
+  margin: 15px auto;
+  box-shadow: 0 9px 18px rgba(128, 109, 109, 0.5);
+  cursor: pointer;
+  margin-top: 20px;
+}
+.freshon-container .scroll-target.section-four .slider .card img{
+  width: 100%;
+}
+.freshon-container .scroll-target.section-four .slider .v.owl-controls {
+  display: none;
+}
+.freshon-container .scroll-target.section-four .slider  {
+  margin-top: 10px;
+}
+.freshon-container .scroll-target.section-five{
+ background-color: #FFFFFF;
+ color: #000;
+ font-family: 'Futuralight',sans-serif;
+}
+
+.freshon-container .scroll-target.section-five .bg-text {
+  color: #FFFFFF;
+  font-size: 30px;
+  padding: 0;
+}
+.freshon-container .scroll-target.section-five .bg-text .title-image{
+  color: #FFFFFF;
+  font-size: 30px;
+  background: url("../images/4`.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-position: center;
+  font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-six .bg-text .title-image{
+  color: #FFFFFF;
+  font-size: 30px;
+  background: url("../images/Team Photo.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-position: center;
+  font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-five .title-image:after {
+  background-color: rgba(0,0,0,0.5);
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.freshon-container .scroll-target.section-five .bg-text .title-image .title {
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  width: 290px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+.freshon-container .scroll-target.section-five .slider .card {
+  width: 90%;
+  margin: 15px auto;
+  box-shadow: 0 9px 18px rgba(128, 109, 109, 0.5);
+  cursor: pointer;
+  margin-top: 20px;
+}
+.freshon-container .scroll-target.section-five .slider .card img{
+  width: 100%;
+}
+.freshon-container .scroll-target.section-five .slider .v.owl-controls {
+  display: none;
+}
+.freshon-container .scroll-target.section-five .slider  {
+  margin-top: 10px;
+}
+.freshon-container .scroll-target.section-six{
+ background-color: #FFFFFF;
+ color: #000;
+ font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-six .title-image{
+ color: #FFFFFF;
+ font-size: 30px;
+ background: url("../images/Team Photo.jpg") !important;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 50vh;
+ position: relative;
+ background-position: center;
+ font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-six .title-image .title {
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  font-size: 22px;
+  width: 290px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+.freshon-container .scroll-target.section-six p,
+.freshon-container .scroll-target.section-six h3 {
+  margin: 10px 0;
+  font-family: 'Futuralight',sans-serif;
+  font-weight: 400;
+}
+.freshon-container .scroll-target.section-six h3 {
+  font-size: 35px;
+  font-family: 'Futuramedium',sans-serif;
+}
+.freshon-container .scroll-target.section-seven .order-time {
+  color: #000;
+  width: 290px;
+  margin: 0 auto;
+}
+.freshon-container .scroll-target.section-seven .social-icon {
+  float: left;
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  font-size: 30px;
+  color: #FFFFFF;
+  z-index: 9999;
+}
+.freshon-container .scroll-target.section-seven .social-icon  a{
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0px 3px;
+}
+.freshon-container .scroll-target.section-seven ul.bottom-menu {
+  list-style: none;
+  padding: 0;
+  z-index: 9999;
+  position: absolute;
+  margin: 10px auto;
+  clear: both;
+  bottom: 75px;
+  left: 0;
+  right: 0;
+}
+.freshon-container .scroll-target.section-seven ul.bottom-menu li {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px;
+}
+.freshon-container .scroll-target.section-seven .order-time .order-details {
+  font-family: 'Futuramedium',sans-serif;
+}
+.freshon-container .scroll-target.section-seven .order-time p {
+  color: #000;  
+  font-size: 23px;
+  font-family: 'Futuralight',sans-serif;
+  margin: 50px 0;
+}
+.freshon-container .scroll-target.section-seven .order-time p.ordernow {
+  font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-seven .order-time p.ordernow span {
+  font-family: 'Futuramedium',sans-serif;
+}
+.freshon-container .scroll-target.section-seven{
+ background-color: #FFFFFF;
+ color: #000;
+ font-family: 'Futuralight',sans-serif;
+ background: url("../images/Download-Photo.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 100vh;
+ position: relative;
+ background-position: center;
+}
+.freshon-container .scroll-target.section-seven .title-image{
+  color: #FFFFFF;
+  font-size: 20px;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  float: left;
+  font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-seven:after ,
+.freshon-container .scroll-target.section-six .title-image:after{
+ background-color: rgba(0,0,0,0.5);
+ content: '';
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ top: 0;
+ left: 0;
+ right: 0;
+}
+.freshon-container .scroll-target.section-six .order-time{
+ font-size: 20px;
+ width: 100%;
+ height: 50vh;
+ position: relative;
+ float: left;
+ font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-six .order-time .ordernow{
+  color: #000;
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+  width: 300px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  left: 0;
+  font-weight: 800;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+.freshon-container .scroll-target.section-six .order-time span.whatsapp-number {
+  display: block;
+  font-size: 18px;
+  margin: 10px;
+}
+.freshon-container .scroll-target.section-seven .title-image .title {
+  color: #FFFFFF;
+  position: relative;
+  font-size: 22px;
+  width: 290px;
+  margin: 0px auto;
+  z-index: 1;
+  text-align: center;
+}
+.freshon-container .scroll-target.section-seven p,
+.freshon-container .scroll-target.section-seven h3 {
+  font-family: 'Futuralight',sans-serif;
+  font-weight: 400;
+}
+.freshon-container .scroll-target.section-seven h3 {
+  font-size: 40px;
+  width: 248px;
+  margin: 0 auto;
+}
+.freshon-container .scroll-target.section-seven .order-time {
+  color: #FFFFFF;
+  width: 290px;
+  margin: 0 auto;
+}
+.freshon-container .scroll-target.section-seven .order-time p {
+  color: #FFFFFF;  
+  font-size: 23px;
+  font-family: 'Futuralight',sans-serif;
+  margin: 50px 0;
+}
+.freshon-container .scroll-target.section-seven .title-image .footer {
+  bottom: 0;
+  float: left;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  background-color: #988f8f;
+  color: #FFFFFF;
+  padding: 5px 0;
+  font-size: 12px;
+  z-index: 99;
+}
+.freshon-container .scroll-target.section-seven .order-time p.ordernow {
+  font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-seven .title-image-time {
+  color: #FFFFFF;
+  font-size: 20px;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  float: left;
+  font-family: 'Futuralight',sans-serif;
+  z-index: 11;
+}
+.freshon-container .scroll-target.section-seven .title-image {
+  height: 60vh;
+}
+.freshon-container .scroll-target.section-seven .order-time p.ordernow span {
+  font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-seven h3 {
+  width: 250px;
+  margin: 0 auto;
+  font-size: 35px;
+}
+.freshon-container .scroll-target.section-seven .app-wrapper {
+  width: 100%;
+  float: left;
+  position: relative;
+  bottom: 0px;
+  padding: 20px 15px;
+  z-index: 9999;
+}
+.freshon-container .scroll-target.section-seven .app-wrapper .app-button  {
+  color: #ffffff;
+}
+.freshon-container .scroll-target.section-seven .app-wrapper .app-button img {
+  width: 20px;  
+  margin-right: 5px; 
+}
+.freshon-container .scroll-target.section-seven .app-wrapper .app-button  {
+  color: #ffffff;
+  border: 2px solid #FFFFFF;
+  padding: 4px;
+  float: left;
+  font-size: 22px;
+  width: 130px;
+}
+.freshon-container .scroll-target.section-seven .app-wrapper .app-button.android-app  {
+  float: right;
+}
+.freshon-container .scroll-target.section-seven .contactus{
+  color: #000;
+  font-size: 20px;
+  width: 100%;
+  height: 50vh;
+  background-color: transparent;
+  position: relative;
+  background-position: center;
+  font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-seven .contactus h3 {
+  text-decoration: underline;
+  font-family: 'Futuramedium',sans-serif;
+}
+.freshon-container .scroll-target.section-seven .contactus .title {
+  color: #000;
+  position: absolute;
+  top: 50%;
+  font-size: 22px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+.freshon-container .scroll-target.section-seven .contactus .mailphone-wrapper {
+  width: 100%;
+  float: left;
+  padding: 0px 15px;
+  margin: 20px auto;
+}
+.freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button {
+  color: #000;
+  text-decoration: underline;
+}
+.freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button img {
+  width: 20px;  
+  margin-right: 5px; 
+}
+.freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button {
+  color: #000;
+  border: none;
+  padding: 4px;
+  float: left;
+  font-size: 15px;
+  width: auto;
+  font-family: 'Futuralight',sans-serif;
+}
+.freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button img {
+  width: 30px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button.phone-link {
+  float: right;
+}
+.freshon-container .scroll-target.section-seven .sub-text {
+  font-size: 30px;
+}
+.freshon-container .scroll-target.section-seven .contactus .address {
+  font-size: 18px;
+  padding: 0 15px;
+}
+.freshon-container .scroll-target.section-seven .contactus .address p{
+  font-size: 20px;
+  float: left;
+  width: 100%;
+  font-family: 'Futuramedium',sans-serif;
+}
+.freshon-container .scroll-target.section-seven .contactus .address a{
+ text-decoration: underline;
+ display: block;
+}
+
+.freshon-container #backToTop {
+  display: none;
+  position: fixed;
+  bottom: 70px;
+  right: 12px;
+  border-radius: 50%;
+  width: 40px;
+  margin: 0 auto;
+  height: 40px;
+  color: #FFFFFF;
+  padding: 10px;
+  background: url(../images/up-arrow.png) #4CAF50;
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 99999;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  box-shadow: 0 8px 4px 0px rgba(103, 48, 48, 0.5);
+}
+.freshon-container .scroll-target.section-one div#goto {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 40px;
+  cursor: pointer;
+}
+.freshon-container .scroll-target.section-one div#goto img {
+  width: 100%;
+}
+.freshon-container .scroll-target.section-one div#goto {
+ transition: color 0.35s ease-in-out, background 0.35s ease-in-out, border 0.35s ease-in-out;
+ -moz-animation: bounce 2s ease-in-out infinite;
+ -o-animation: bounce 2s ease-in-out infinite;
+ -webkit-animation: bounce 2s ease-in-out infinite;
+ animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translate(0,-20px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0,20px);
+    opacity: 0;
+  }
+}
+
+/*@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+  40% {-webkit-transform: translateY(-30px);}
+  60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+  40% {-moz-transform: translateY(-30px);}
+  60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+  40% {-o-transform: translateY(-30px);}
+  60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+  }*/
+  .freshon-container .scroll-target .contactus .footer {
+    bottom: 0;
+    float: left;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    background-color: grey;
+    color: #FFFFFF;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus h3 {
+    font-size: 32px;
+  }
+
+
+  /* Tooltip container */
+  .bottom-menu li {
+    position: relative;
+    display: inline-block;
+  }
+  .tooltiptext {
+    width: 90%;
+    background-color: #FFFFFF;
+    color: #000;
+    line-height: 20px;
+    border-radius: 3px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    text-align: justify;
+    overflow-x: hidden;
+    margin-left: -10px;
+    height: 90%;
+    font-size: 12px;
+    padding: 20px;
+    padding-top: 20px;
+    margin: 0 auto;
+    right: 0;
+    z-index: 99999999;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .tooltiptext div {
+    margin-top: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    overflow-x:hidden;
+    overflow-y: auto;
+    height: 80vh;
+  }
+  span.tooltiptext.addresspopup div {
+    top: 15%;
+    height: auto;
+  }
+  span.tooltiptext.addresspopup {
+    height: 40vh;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .tooltiptext span.closeicon {
+    font-size: 30px;
+    top: 10px;
+    position: fixed;
+    right: 15px;
+  }
+   /* !important is needed sometimes */
+ ::-webkit-scrollbar {
+    width: 8px !important;
+ }
+
+ /* Track */
+::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+   -webkit-border-radius: 10px !important;
+   border-radius: 10px !important;
+ }
+
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 10px !important;
+   border-radius: 10px !important;
+   background: #41617D !important; 
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5) !important; 
+
+ }
+ ::-webkit-scrollbar-thumb:window-inactive {
+   background: #41617D !important; 
+ }
+  div.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+
+  .bottom-menu li a,
+  .bottom-menu li a:hover,
+  .bottom-menu li a:focus {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .bottom-menu li.terms .tooltiptext {
+    width: 100px;
+    background-color: #FFFFFF;
+    color: #000;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 6%;
+    margin-left: 0px;
+    height: 60px;
+  }
+  .bottom-menu li .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 4%;
+    border-width: 7px;
+    border-style: solid;
+    border-color: #FFFFFF transparent transparent transparent;
+  }
+  .bottom-menu li span.closeicon {
+    position: absolute;
+    right: 4px;
+    top: -1px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  @media only screen and (max-width: 330px) {
+    .freshon-container .scroll-target.section-one .title {
+      font-size: 18px;
+      margin-top: 10px;
+      float: left;
+      width: 100%;
+    }
+    .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button img {
+      width: 25px;
+    }
+    .freshon-container .scroll-target.section-one .logo {
+      margin-bottom: 25px;
+    }
+    .freshon-container .scroll-target.section-one .app-wrapper {
+      width: 100%;
+      float: left;
+      position: absolute;
+      bottom: 40px;
+      padding: 0px 15px;
+    }
+    .freshon-container .scroll-target.section-two .slider {
+      margin-top: 20px;
+    }
+    .freshon-container .scroll-target.section-three .slider ,
+    .freshon-container .scroll-target.section-four .slider ,
+    .freshon-container .scroll-target.section-five .slider{
+      margin-top: 5px;
+      height: 60vh;
+    }
+    .freshon-container .scroll-target.section-three .bg-text .title-image ,
+    .freshon-container .scroll-target.section-four .bg-text .title-image ,
+    .freshon-container .scroll-target.section-five .bg-text .title-image {
+      height: 40vh;
+    }
+    .freshon-container .scroll-target.section-two .bg-text {
+      color: #000;
+      font-size: 23px;
+      padding: 0;
+    }
+    .freshon-container .scroll-target.section-seven .app-wrapper .app-button img {
+      width: 17px;
+      margin-right: 5px;
+    }
+    .freshon-container .scroll-target.section-seven .app-wrapper .app-button  {
+      padding: 2px;
+      font-size: 21px;
+      width: 120px;
+    }
+    .freshon-container .scroll-target.section-seven .title-image {
+      height: 60vh;
+    }
+    .freshon-container .scroll-target.section-six .title-image {
+      height: 50vh;
+    }
+    .freshon-container .scroll-target.section-one .trucklogo img.truck {
+      width: 200px;
+    }
+    .freshon-container .scroll-target.section-seven .contactus {
+      height: 55vh;
+    }
+    .freshon-container .scroll-target.section-seven .contactus .address a {
+     margin: 10px auto;
+     font-size: 19px;
+   }
+   .freshon-container .scroll-target.section-one .logo img {
+    width: 90%;
+  }
+  .freshon-container .scroll-target.section-two .bg-text .title {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .freshon-container .scroll-target.section-three .slider .card,
+  .freshon-container .scroll-target.section-four .slider .card,
+  .freshon-container .scroll-target.section-five .slider .card {
+    width: 95%;
+    margin: 15px auto;
+    margin-top: 15px;
+  }
+  .freshon-container .scroll-target.section-one .subtext {
+    font-size: 15px;
+    margin-top: 15px;
+    float: left;
+    width: 100%;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button  {
+    width: 115px;
+    font-size: 20px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time p {
+    margin: 18px 0;
+  }
+  .scroll-target.section-one .app-wrapper .app-button img {
+    width: 16px;
+    margin-right: 5px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus h3 {
+    text-decoration: underline;
+    font-size: 30px;
+  }
+  .freshon-container .scroll-target.section-one div#goto {
+    bottom: 30px;
+  }
+  .freshon-container .scroll-target.section-seven .sub-text {
+    font-size: 20px;
+    margin: 10px auto;
+  }
+  .freshon-container .scroll-target.section-one div#goto {
+    width: 30px;
+  }
+  .freshon-container .scroll-target.section-seven h3 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 35px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time p {
+    font-size: 22px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .mailphone-wrapper {
+    margin: 3px auto;
+  }
+  .freshon-container .scroll-target.section-seven .app-wrapper {
+    bottom: 0px;
+  }
+  .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button {
+    font-size: 15px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .address p {
+    font-size: 14px;
+  }
+  .freshon-container .scroll-target.section-two .slider .card {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 320px) and (min-height:500px){
+  .freshon-container .scroll-target.section-two .bg-text {
+    font-size: 27px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time p {
+    margin: 5px 0;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .address p {
+    font-size: 16px;
+  }
+  .freshon-container .scroll-target.section-three .slider,
+  .freshon-container .scroll-target.section-four .slider, 
+  .freshon-container .scroll-target.section-five .slider {
+   margin-top: 10px; 
+ } 
+ .freshon-container .scroll-target.section-three .bg-text .title-image, 
+ .freshon-container .scroll-target.section-four .bg-text .title-image,
+ .freshon-container .scroll-target.section-five .bg-text .title-image {
+  height: 40vh;
+}
+}
+@media only screen and (min-width: 370px) {
+  .freshon-container .scroll-target.section-seven .social-icon {
+    bottom: 60px !important;
+  }
+  .freshon-container .scroll-target.section-seven ul.bottom-menu {
+    bottom: 90px !important;
+  }
+}
+@media only screen and (min-width: 350px) {
+  .freshon-container .scroll-target.section-one .logo img {
+    width: 85%;
+  }
+  .freshon-container .scroll-target.section-seven ul.bottom-menu {
+    bottom: 80px;
+  }
+  .freshon-container .scroll-target.section-one .trucklogo img.truck {
+    width: 200px;
+  }
+  .freshon-container .scroll-target.section-two .slider .card ,
+  .freshon-container .scroll-target.section-three .slider .card ,
+  .freshon-container .scroll-target.section-four .slider .card,
+  .freshon-container .scroll-target.section-five .slider .card {
+    width: 95%;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .title {
+    top: 35%;
+    transform: translateY(-35%);
+    -webkit-transform: translateY(-35%);
+  }
+  .freshon-container .scroll-target.section-seven .order-time p ,
+  .freshon-container .scroll-target.section-six .title-image .title {
+    font-size: 25px;
+  }
+  .freshon-container .scroll-target.section-one .title {
+    font-size: 21px;
+    margin-top: 10px;
+    width: 100%;
+    float: left;
+    margin-bottom: 25px;
+  }
+  .freshon-container .scroll-target.section-one .subtext {
+    font-size: 17px;
+    margin-top: 16px;
+    float: left;
+    width: 100%;
+  }
+  .freshon-container .scroll-target.section-two .bg-text {
+    font-size: 30px;
+    padding: 0;
+  }
+  .freshon-container .scroll-target.section-three .bg-text .title-image,
+  .freshon-container .scroll-target.section-four .bg-text .title-image,
+  .freshon-container .scroll-target.section-five .bg-text .title-image {
+    height: 40vh;
+  }
+  .freshon-container .scroll-target.section-three .slider,
+  .freshon-container .scroll-target.section-four .slider,
+  .freshon-container .scroll-target.section-five .slider {
+    margin-top: 5px;
+  }
+  .freshon-container .scroll-target.section-seven .sub-text {
+    font-size: 20px;
+    margin: 10px auto;
+  }
+  .freshon-container .scroll-target.section-one .logo {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .freshon-container .scroll-target.section-one .title {
+    font-size: 24px;
+  }
+  .freshon-container .scroll-target.section-one .trucklogo img.truck {
+    width: 150px;
+  }
+  .freshon-container .scroll-target.section-one .subtext {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .freshon-container .scroll-target.section-two .slider .card img {
+    height: 280px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time p,
+  .freshon-container .scroll-target.section-six .title-image .title {
+    font-size: 27px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time ,
+  .freshon-container .scroll-target.section-six .title-image .title ,
+  .freshon-container .scroll-target.section-seven .title-image .title ,
+  .freshon-container .scroll-target.section-seven h3{
+    width: 380px;
+  }
+  .freshon-container .scroll-target.section-six h3 ,
+  .freshon-container .scroll-target.section-seven h3 {
+    font-size: 50px;
+  }
+  .freshon-container .scroll-target.section-seven .sub-text {
+    font-size: 30px;
+    margin: 10px auto;
+  }
+  .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button {
+    font-size: 22px;
+  }
+  .freshon-container .scroll-target.section-three .bg-text .title-image .title ,
+  .freshon-container .scroll-target.section-four .bg-text .title-image .title ,
+  .freshon-container .scroll-target.section-five .bg-text .title-image .title{
+    font-size: 50px;
+    width: 350px;
+  }
+  .freshon-container .scroll-target.section-two .bg-text .title {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .freshon-container .scroll-target.section-two .bg-text {
+    font-size: 35px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .address p {
+    font-size: 19px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus h3 {
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 360px) and (min-height:350px){
+  .freshon-container .scroll-target.section-three .slider .card,
+  .freshon-container .scroll-target.section-four .slider .card,
+  .freshon-container .scroll-target.section-five .slider .card {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 360px){
+  .freshon-container .scroll-target.section-one .app-wrapper {
+    bottom: 120px;
+    padding: 0px 15px;
+  }
+  .freshon-container .scroll-target.section-seven ul.bottom-menu li {
+    padding: 8px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time {
+    width: 345px;
+  }
+  .freshon-container .scroll-target.section-six .title-image {
+    height: 45vh;
+  }
+}
+@media only screen and (min-width: 340px) and (min-height:500px){
+  .freshon-container .scroll-target.section-three .slider .card,
+  .freshon-container .scroll-target.section-four .slider .card,
+  .freshon-container .scroll-target.section-five .slider .card {
+    width: 95%;
+  }
+}
+@media only screen and (min-width:350px) and (max-width:370px) {
+  .freshon-container .scroll-target.section-six .title-image {
+    height: 40vh;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .mailphone-wrapper {
+    width: 100%;
+    float: left;
+    padding: 0px 15px;
+    margin: 5px auto;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  .freshon-container .scroll-target.section-one .logo img {
+    width: 70%;
+  }
+  .freshon-container .scroll-target.section-seven .title-image .footer {
+    padding: 6px 0;
+    font-size: 15px;
+  }
+  .freshon-container #backToTop {
+    bottom: 100px;
+    width: 60px;
+    height: 60px;
+    background-size: 25px;
+  }
+  #preloader p img {
+    width: 500px;
+    height: auto;
+    position: relative;
+    bottom: 110px;
+    max-width: 100%;
+  }
+  .freshon-container .scroll-target.section-one .trucklogo {
+    height: auto;
+    margin-top: 0px;
+  }
+  .freshon-container .scroll-target.section-two .slider .card img {
+    height: 300px;
+  }
+  .freshon-container .scroll-target.section-one .trucklogo img.truck {
+    width: 320px;
+  }
+  .freshon-container .scroll-target.section-two .slider {
+    margin-top: 100px;
+  }
+  .freshon-container .scroll-target.section-one .subtext {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  .freshon-container .scroll-target.section-three .bg-text .title-image,
+  .freshon-container .scroll-target.section-four .bg-text .title-image,
+  .freshon-container .scroll-target.section-five .bg-text .title-image {
+    height: 45vh;
+  }
+  .freshon-container .scroll-target.section-one .title {
+    font-size: 32px;
+    width: 100%;
+    margin: 60px auto;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button  {
+    padding: 6px;
+    font-size: 35px;
+    width: 200px;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button img {
+    width: 30px;
+  }
+  .freshon-container .scroll-target.section-one div#goto {
+    width: 60px;
+  }
+  .freshon-container .scroll-target.section-two .bg-text .title {
+    width: 470px;
+    font-size: 50px;
+  }
+  .freshon-container .scroll-target.section-two .slider .card {
+    width: 96%;
+  }
+  .freshon-container .scroll-target.section-three .bg-text .title-image .title ,
+  .freshon-container .scroll-target.section-four .bg-text .title-image .title ,
+  .freshon-container .scroll-target.section-five .bg-text .title-image .title  {
+    font-size: 70px;
+    width: 500px;
+  }
+  .freshon-container .scroll-target.section-three .slider .card ,
+  .freshon-container .scroll-target.section-four .slider .card,
+  .freshon-container .scroll-target.section-five .slider .card {
+    width: 95%;
+    margin-top: 30px;
+  }
+  .freshon-container .scroll-target.section-six h3 {
+    font-size: 50px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time p, 
+  .freshon-container .scroll-target.section-six .title-image .title {
+    font-size: 40px;
+  }
+  .freshon-container .scroll-target .contactus .footer {
+    font-size: 20px;
+  }
+  .freshon-container .scroll-target.section-six .title-image .title ,
+  .freshon-container .scroll-target.section-seven .order-time p {
+    width: 470px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time {
+    width: 470px;
+  }
+  .freshon-container .scroll-target.section-seven h3 ,
+  .freshon-container .scroll-target.section-seven .title-image .title{
+    width: 380px;
+    font-size: 60px;
+  }
+  .freshon-container .scroll-target.section-seven .app-wrapper .app-button {
+    padding: 8px;
+    font-size: 35px;
+    width: 220px;
+  }
+  .freshon-container .scroll-target.section-seven .app-wrapper .app-button img{
+    width: 30px;
+  }
+  .freshon-container .scroll-target.section-seven .sub-text {
+    font-size: 33px;
+    margin: 16px auto;
+  }
+  .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button {
+    font-size: 35px;
+  }
+  .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button img {
+    width: 40px;
+    margin-bottom: 8px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .address p {
+    font-size: 28px;
+  }
+  .freshon-container .scroll-target.section-three .slider,
+  .freshon-container .scroll-target.section-four .slider,
+  .freshon-container .scroll-target.section-five .slider {
+    margin-top: 15px;
+    height: 55vh;
+  }
+  .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button {
+    font-size: 27px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus h3 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .freshon-container .scroll-target.section-one .logo img {
+    width: 75%;
+  }
+  .freshon-container .scroll-target.section-one .subtext {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .freshon-container .scroll-target.section-seven ul.bottom-menu li {
+    font-size: 30px !important;
+    padding: 20px !important;
+    padding-bottom: 10px !important;
+  }
+  .bottom-menu li .tooltiptext {
+    width: 230px !important;
+    bottom: 100% !important;
+    height: 100px !important;
+  }
+  .bottom-menu li .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 4%;
+    border-width: 12px !important;
+    border-style: solid;
+    border-color: #FFFFFF transparent transparent transparent;
+  }
+  .bottom-menu li span.closeicon {
+    position: absolute;
+    right: 10px !important;
+    top: -1px;
+    font-size: 30px !important;
+    font-weight: bold;
+  }
+  .bottom-menu li.terms .tooltiptext {
+    width: 230px !important;
+    bottom: 100% !important;
+    height: 110px !important;
+  }
+  .freshon-container .scroll-target.section-two .slider .card img{
+    height: 370px;
+  }
+  .freshon-container .scroll-target.section-one .title {
+    font-size: 35px;
+    width: 100%;
+    margin: 95px auto;
+    margin-bottom: 40px;
+  }
+  .freshon-container .scroll-target.section-one .subtext {
+    font-size: 35px;
+    margin-top: 2px;
+  }
+  .freshon-container .scroll-target.section-one .trucklogo {
+    height: auto;
+    margin-top: 0px;
+  }
+  .freshon-container .scroll-target.section-one .trucklogo img.truck {
+    width: 330px;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button {
+    padding: 4px;
+    font-size: 37px;
+    width: 225px;
+  }
+  .freshon-container .scroll-target.section-one div#goto {
+    width: 70px;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button img {
+    width: 30px;
+  }
+  .freshon-container .scroll-target.section-two .bg-text .title {
+    width: 500px;
+    font-size: 60px;
+  }
+  .freshon-container .scroll-target.section-two .slider .card {
+    width: 96%;
+  }
+  .freshon-container .scroll-target.section-three .bg-text .title-image .title ,
+  .freshon-container .scroll-target.section-four .bg-text .title-image .title ,
+  .freshon-container .scroll-target.section-five .bg-text .title-image .title  {
+    font-size: 80px;
+    width: 500px;
+  }
+  .freshon-container .scroll-target.section-three .slider .card ,
+  .freshon-container .scroll-target.section-four .slider .card,
+  .freshon-container .scroll-target.section-five .slider .card {
+    width: 95%;
+  }
+  .freshon-container .scroll-target.section-six h3 {
+    font-size: 70px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time p, 
+  .freshon-container .scroll-target.section-six .title-image .title {
+    font-size: 45px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time {
+    width: 600px;
+  }
+  .freshon-container .scroll-target.section-six .title-image .title ,
+  .freshon-container .scroll-target.section-seven .order-time p {
+    width: 600px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time {
+    width: 600px;
+  }
+  .freshon-container .scroll-target.section-seven h3 ,
+  .freshon-container .scroll-target.section-seven .title-image .title{
+    width: 460px;
+    font-size: 70px;
+  }
+  .freshon-container .scroll-target.section-seven .app-wrapper .app-button {
+    padding: 8px;
+    font-size: 45px;
+    width: 240px;
+  }
+  .freshon-container .scroll-target.section-seven .app-wrapper .app-button img {
+    width: 35px;
+  }
+  .freshon-container .scroll-target.section-seven .sub-text {
+    font-size: 35px;
+    margin: 16px auto;
+  }
+  .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button {
+    font-size: 30px;
+  }
+  .freshon-container .scroll-target.section-seven .app-wrapper .app-button,
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button {
+    border: 3px solid #FFFFFF;
+  }
+  .freshon-container .scroll-target.section-seven .contactus h3 {
+    font-size: 60px;
+  } 
+  .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button img {
+    width: 40px;
+    margin-bottom: 8px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .address p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 470px) and (orientation:landscape) {
+  .freshon-container .scroll-target.section-one .logo img {
+    width: 40% !important;
+    margin: 0px auto;
+    margin-top: 5px;
+  }
+  .freshon-container .spaces {
+    height: 10px;
+  }
+  .freshon-container .scroll-target.section-six .order-time .ordernow {
+    width: 98%;
+    font-size: 20px !important;
+  }
+  .freshon-container .scroll-target.section-seven .app-wrapper .app-button {
+    padding: 3px;
+    font-size: 20px;
+    width: 110px;
+  }
+  .scroll-target.section-one .app-wrapper .app-button img {
+    width: 15px;
+    margin-right: 5px;
+    vertical-align: -2px;
+  }
+  .freshon-container .scroll-target.section-seven .app-wrapper .app-button img {
+    width: 15px;
+    margin-right: 5px;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button  {
+    color: #ffffff;
+    border: 2px solid #FFFFFF;
+    padding: 2px;
+    float: left;
+    font-size: 18px;
+    width: 120px;
+  }
+  .freshon-container .scroll-target.section-two .slider .card img {
+    height: auto;
+  }
+  .freshon-container .scroll-target.section-one .logo {
+    margin-bottom: 10px;
+    position: relative;
+    top: 0;
+  }
+  .freshon-container .scroll-target.section-one .trucklogo {
+    height: 50px;
+  }
+  .freshon-container .scroll-target.section-two .slider {
+    margin-top: 10px;
+  }
+  .freshon-container .scroll-target.section-two ,
+  .freshon-container .scroll-target.section-three ,
+  .freshon-container .scroll-target.section-four ,
+  .freshon-container .scroll-target.section-five {
+    height: 100vh;
+  }
+  .freshon-container .scroll-target.section-two .bg-text {
+    font-size: 25px;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    margin: 20px auto;
+    width: 100%;
+  }
+  .freshon-container .scroll-target.section-one div#goto {
+    bottom: 1px;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper {
+    bottom: 10px;
+    padding: 0px 15px;
+  }
+  .freshon-container .scroll-target.section-one .subtext {
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  .freshon-container .scroll-target.section-one .trucklogo img.truck {
+    width: 160px;
+  }
+  .freshon-container .scroll-target.section-one .title {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .freshon-container .scroll-target.section-one .bg-text ,
+  .freshon-container .scroll-target.section-seven .title-image .title ,
+  .freshon-container .scroll-target.section-seven .contactus .title {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  .freshon-container .scroll-target.section-two .slider .card,
+  .freshon-container .scroll-target.section-three .slider .card,
+  .freshon-container .scroll-target.section-four .slider .card,
+  .freshon-container .scroll-target.section-five .slider .card {
+    width: 35%;
+  }
+  .freshon-container .scroll-target.section-three .bg-text .title-image ,
+  .freshon-container .scroll-target.section-four .bg-text .title-image ,
+  .freshon-container .scroll-target.section-five .bg-text .title-image {
+    height: 25vh;
+  }
+  .freshon-container .scroll-target.section-three .bg-text .title-image .title,
+  .freshon-container .scroll-target.section-four .bg-text .title-image .title,
+  .freshon-container .scroll-target.section-five .bg-text .title-image .title {
+    width: 95%;
+    font-size: 30px;
+  }
+  .freshon-container .scroll-target.section-three .slider,
+  .freshon-container .scroll-target.section-four .slider,
+  .freshon-container .scroll-target.section-five .slider {
+    margin-top: 0;
+    height: 75vh;
+  }
+  .freshon-container .scroll-target.section-six .title-image .title,
+  .freshon-container .scroll-target.section-seven .order-time,
+  .freshon-container .scroll-target.section-seven .title-image .title {
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+  .freshon-container .scroll-target.section-seven h3 {
+    width: 100%;
+    margin: 2px auto;
+    float: left;
+  }
+  .freshon-container .scroll-target.section-six h3, 
+  .freshon-container .scroll-target.section-seven h3 {
+    font-size: 35px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time p {
+    margin: 0px 0;
+  }
+  .freshon-container .scroll-target.section-seven .contactus h3 {
+    margin: 3px auto;
+    margin-top: 6px; 
+    font-size: 25px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time p,
+  .freshon-container .scroll-target.section-six .title-image .title {
+    font-size: 18px;
+  }
+  .freshon-container .scroll-target.section-seven .sub-text {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+  }
+  .freshon-container .scroll-target.section-seven .title-image {
+    height: 60vh;
+  }
+  .freshon-container .scroll-target.section-seven .contactus {
+    height: 60vh;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .mailphone-wrapper {
+    margin: 2px auto;
+  }
+  .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button img {
+    width: 20px;
+  }
+  .freshon-container .scroll-target.section-seven h3 {
+    font-size: 25px
+  }
+  .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button {
+    font-size: 15px;
+  }
+  .freshon-container .scroll-target.section-seven .sub-text {
+    margin: 0px auto;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .address p {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .freshon-container .scroll-target.section-seven .app-wrapper {
+    bottom: 0px;
+    padding: 1px 10px;
+  }
+}
+@media only screen and (min-width: 550px) and (orientation:landscape) {
+  .freshon-container .scroll-target.section-two .bg-text .title {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .bottom-menu li .tooltiptext {
+    width: 130px;
+    bottom: 110%;
+    height: 48px;
+  }
+  .freshon-container .scroll-target.section-six .order-time .ordernow {
+    width: 98%;
+    font-size: 20px !important;
+  }
+  .freshon-container .scroll-target.section-seven ul.bottom-menu {
+    bottom: 27px;
+    margin: 5px auto;
+  }
+  .freshon-container .scroll-target.section-seven ul.bottom-menu li {
+   padding: 8px 5px;
+   font-size: 12px;
+ }
+ .freshon-container .scroll-target.section-seven .order-time p.ordernow {
+  line-height: 23px;
+}
+.freshon-container .scroll-target.section-seven .title-image-time {
+  font-size: 18px;
+}
+.freshon-container .scroll-target.section-two .slider .card,
+.freshon-container .scroll-target.section-three .slider .card,
+.freshon-container .scroll-target.section-four .slider .card,
+.freshon-container .scroll-target.section-five .slider .card {
+  width: 40%;
+  margin-top: 15px;
+}
+.freshon-container .scroll-target.section-two .slider .card img {
+  height: 160px;
+}
+.freshon-container .scroll-target.section-one .trucklogo {
+  margin-top: 0px;
+  height: auto;
+}
+.freshon-container .scroll-target.section-one .trucklogo img.truck {
+  width: 200px;
+}
+.preloader {
+  width: 100%;
+  margin: 60px auto;
+}
+.preloader img {
+  width: 30%;
+}
+.freshon-container .scroll-target.section-seven .social-icon {
+  position: relative;
+  bottom: 0px;
+  font-size: 25px;
+}
+.freshon-container .scroll-target.section-seven .social-icon {
+  float: left;
+  width: auto;
+  bottom: 33px;
+  font-size: 25px;
+  left: 15px;
+  position: absolute;
+}
+}
+@media only screen and (min-width: 635px) and (orientation:landscape) {
+  .freshon-container .scroll-target.section-two .slider .card img {
+    height: 197px;
+  }
+}
+@media only screen and (min-width: 600px) and (orientation:landscape) {
+  .freshon-container .scroll-target.section-one .title {
+    margin: 0 auto;
+    margin-top: 0px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time p.ordernow {
+    font-family: 'Futuralight',sans-serif;
+    position: relative;
+    width: 98%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    line-height: normal;
+    margin-top: 0px;
+  }
+  .freshon-container .scroll-target.section-six .order-time .ordernow {
+    width: 98%;
+    font-size: 20px !important;
+  }
+  .freshon-container .scroll-target.section-six .order-time .ordernow {
+    color: grey;
+    font-size: 20px !important;
+    font-weight: normal;
+    font-family: arial;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button {
+    padding: 3px;
+    font-size: 23px;
+    width: 140px;
+  }
+  .freshon-container .scroll-target .contactus .footer {
+    font-size: 17px;
+  }
+  .freshon-container .scroll-target.section-one div#goto {
+    width: 46px;
+  }
+  .freshon-container .scroll-target.section-two .bg-text .title {
+    font-size: 25px;
+  }
+  .freshon-container .scroll-target.section-three .bg-text .title-image .title,
+  .freshon-container .scroll-target.section-four .bg-text .title-image .title,
+  .freshon-container .scroll-target.section-five .bg-text .title-image .title {
+    width: 95%;
+    font-size: 35px;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button img {
+    width: 20px;
+  }
+  .freshon-container .scroll-target.section-two .slider .card {
+    width: 60%;
+  }
+  .freshon-container .scroll-target.section-three .slider .card,
+  .freshon-container .scroll-target.section-four .slider .card,
+  .freshon-container .scroll-target.section-five .slider .card {
+    width: 55%;
+  }
+  .freshon-container .scroll-target.section-six .title-image .title {
+    margin: 0px auto;
+  }
+  .freshon-container .scroll-target.section-seven .order-time p{
+    margin: 2px auto;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .address p {
+    font-size: 21px;
+    margin-top: 5px;
+  }
+  .freshon-container .scroll-target.section-six .title-image .title, 
+  .freshon-container .scroll-target.section-seven .order-time, 
+  .freshon-container .scroll-target.section-seven .title-image .title {
+    width: 98%;
+  }
+  .freshon-container .scroll-target.section-seven .order-time p,
+  .freshon-container .scroll-target.section-six .title-image .title {
+    font-size: 20px;
+  }
+  .freshon-container .scroll-target.section-seven .app-wrapper .app-button {
+    padding: 3px;
+    font-size: 20px;
+    width: 135px;
+  }
+  .freshon-container .scroll-target.section-seven .app-wrapper .app-button img {
+    width: 18px;
+  }
+  .freshon-container .scroll-target.section-seven .social-icon {
+    bottom: 35px;
+    font-size: 25px;
+  }
+  .freshon-container .scroll-target.section-seven .social-icon a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0px 6px;
+  }
+  .freshon-container .scroll-target.section-seven ul.bottom-menu li {
+    font-size: 13px !important;
+    padding: 6px !important;
+  }
+  .freshon-container .scroll-target.section-seven .title-image .footer {
+    padding: 5px 0;
+    font-size: 13px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus h3 {
+    margin: 5px auto;
+    margin-top: 6px;
+    font-size: 30px;
+  }
+  .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button img {
+    width: 25px;
+  }
+  .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button {
+    font-size: 18px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .address p {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 900px) and (orientation: landscape) {
+  .freshon-container .scroll-target.section-one .bg-text, 
+  .freshon-container .scroll-target.section-seven .title-image .title,
+  .freshon-container .scroll-target.section-seven .contactus .title ,
+  .freshon-container .scroll-target.section-two .bg-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+  .freshon-container .scroll-target.section-one .trucklogo {
+    height: 100px;
+  }
+  .freshon-container .scroll-target.section-one .trucklogo img.truck {
+    width: 170px;
+  }
+  .freshon-container .scroll-target.section-one .title {
+    margin: 0 auto;
+    margin-top: 70px;
+    font-size: 60px;
+  }
+  .freshon-container .scroll-target.section-two .bg-text .title {
+    font-size: 45px;
+    width: 700px;
+    margin-bottom: 70px;
+  }
+  .freshon-container .scroll-target.section-one .trucklogo {
+    margin-top: 10px;
+    height: 180px;
+  }
+  .freshon-container .scroll-target.section-one .subtext {
+    font-size: 29px;
+    margin-top: 45px;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button  {
+    padding: 8px;
+    font-size: 35px;
+    width: 250px;
+  }
+  .freshon-container .scroll-target.section-one .app-wrapper .app-button img {
+    width: 30px;
+  }
+  .freshon-container .scroll-target.section-one div#goto {
+    width: 75px;
+  }
+  .freshon-container .scroll-target.section-three .bg-text .title-image,
+  .freshon-container .scroll-target.section-four .bg-text .title-image,
+  .freshon-container .scroll-target.section-five .bg-text .title-image {
+    height: 50vh;
+  }
+  .freshon-container .scroll-target.section-three .bg-text .title-image .title, 
+  .freshon-container .scroll-target.section-four .bg-text .title-image .title, 
+  .freshon-container .scroll-target.section-five .bg-text .title-image .title {
+    width: 80%;
+    font-size: 80px;
+  }
+  .freshon-container .scroll-target.section-six .title-image .title,
+  .freshon-container .scroll-target.section-seven .order-time,
+  .freshon-container .scroll-target.section-seven .title-image .title {
+    width: 80%;
+  }
+  .freshon-container .scroll-target.section-three .slider .card,
+  .freshon-container .scroll-target.section-four .slider .card,
+  .freshon-container .scroll-target.section-five .slider .card {
+    width: 80%;
+  }
+  .freshon-container .scroll-target.section-six .title-image .title,
+  .freshon-container .scroll-target.section-seven .order-time p {
+    width: 80%;
+  }
+  .freshon-container .scroll-target.section-seven .order-time p {
+    margin: 40px auto;
+  }
+  .freshon-container .scroll-target.section-six .title-image .title {
+    margin: 0 auto;
+  }
+  .freshon-container .scroll-target.section-seven .app-wrapper .app-button  {
+    padding: 5px;
+    font-size: 40px;
+    width: 240px;
+  }
+  .freshon-container .scroll-target.section-seven .app-wrapper .app-button img {
+    width: 30px;
+  }
+  .freshon-container .scroll-target.section-six h3{
+    font-size: 50px;
+  }
+  .freshon-container .scroll-target.section-seven h3 {
+    font-size: 65px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus h3 {
+    margin: 30px auto;
+    margin-top: 6px;
+    font-size: 50px;
+  }
+  .freshon-container .scroll-target.section-seven .sub-text {
+    width: 100%;
+    float: left;
+    font-size: 30px;
+  }
+  .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button img {
+    width: 40px;
+  }
+  .freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button {
+    font-size: 25px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .address p {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  .freshon-container .scroll-target.section-seven .order-time p, 
+  .freshon-container .scroll-target.section-six .title-image .title {
+    font-size: 35px;
+  }
+  .freshon-container .scroll-target.section-two,
+  .freshon-container .scroll-target.section-three, 
+  .freshon-container .scroll-target.section-four,
+  .freshon-container .scroll-target.section-five {
+    height: 100vh;
+  }
+  .freshon-container .scroll-target.section-two .slider .card {
+    width: 90%;
+  }
+}
+
+
+@media only screen and (min-width: 900px) and (min-height:500px) and (orientation: landscape) {
+  .freshon-container .scroll-target.section-one .subtext {
+    margin-top: 10px;
+  }
+  .freshon-container .scroll-target.section-one .title {
+    margin-top: 40px;
+  }
+  .freshon-container .scroll-target.section-one .trucklogo {
+    height: 120px;
+  }
+  .freshon-container .scroll-target.section-two .bg-text .title {
+    font-size: 40px;
+    width: 800px;
+    margin-bottom: 16px;
+  }
+  .freshon-container .scroll-target.section-three .bg-text .title-image,
+  .freshon-container .scroll-target.section-four .bg-text .title-image, 
+  .freshon-container .scroll-target.section-five .bg-text .title-image {
+    height: 30vh;
+  }
+  .freshon-container .scroll-target.section-three .bg-text .title-image .title,
+  .freshon-container .scroll-target.section-four .bg-text .title-image .title, 
+  .freshon-container .scroll-target.section-five .bg-text .title-image .title {
+    width: 80%;
+    font-size: 65px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus h3 {
+    margin: 0px auto;
+    margin-top: 6px;
+    font-size: 50px;
+  }
+  .freshon-container .scroll-target.section-seven .contactus .address p {
+    font-size: 23px;
+    margin-top: 20px;
+  }
+  .freshon-container .scroll-target.section-seven .sub-text {
+    margin: 10px auto;
+  }
+  .freshon-container .scroll-target.section-seven h3 {
+    font-size: 65px;
+  }
+  .freshon-container .scroll-target.section-six .title-image {
+    height: 38vh;
+  }
+  .freshon-container .scroll-target.section-two .slider .card {
+    width: 75%;
+  }
+  .freshon-container .scroll-target.section-three .slider .card,
+  .freshon-container .scroll-target.section-four .slider .card, 
+  .freshon-container .scroll-target.section-five .slider .card {
+    width: 60%;
+  }
+}
+
+
+@media only screen and (min-width: 1050px) {
+  .freshon-container .scroll-target.section-one .bg-text,
+  .freshon-container .scroll-target.section-seven .contactus .title ,
+  .freshon-container .scroll-target.section-two .bg-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+  .freshon-container .scroll-target.section-two .slider .card img {
+    height: 313px;
+  }
+  .freshon-container .scroll-target.section-one .logo img {
+    width: 50% !important;
+    margin: 0px auto;
+  }
+  .freshon-container .scroll-target.section-one .title {
+    margin-top: 185px;
+  }
+  .freshon-container .scroll-target.section-three .slider,
+  .freshon-container .scroll-target.section-four .slider,
+  .freshon-container .scroll-target.section-five .slider {
+    margin-top: 0;
+    height: 60vh;
+  }
+  .freshon-container .scroll-target.section-two, 
+  .freshon-container .scroll-target.section-three,
+  .freshon-container .scroll-target.section-four,
+  .freshon-container .scroll-target.section-five {
+   height: 100%;
+ }
+ .freshon-container .scroll-target.section-one .trucklogo {
+  height: 150px;
+}
+.freshon-container .scroll-target.section-one .trucklogo img.truck {
+  width: 250px !important;
+}
+.freshon-container .scroll-target.section-one .title {
+  margin: 30px auto;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.freshon-container .scroll-target.section-one .trucklogo {
+  margin-top: 0px;
+}
+.freshon-container .scroll-target.section-two .bg-text .title {
+  font-size: 45px;
+  width: 700px;
+  margin-bottom: 70px;
+}
+.freshon-container .scroll-target.section-one .subtext {
+  font-size: 25px;
+  margin-top: 25px;
+}
+.freshon-container .scroll-target.section-one .app-wrapper .app-button  {
+  padding: 3px;
+  font-size: 35px;
+  width: 250px;
+}
+.freshon-container .scroll-target.section-one .app-wrapper .app-button img {
+  width: 30px;
+}
+.freshon-container .scroll-target.section-one div#goto {
+  width: 75px;
+}
+.freshon-container .scroll-target.section-three .bg-text .title-image,
+.freshon-container .scroll-target.section-four .bg-text .title-image,
+.freshon-container .scroll-target.section-five .bg-text .title-image {
+  height: 40vh;
+}
+.freshon-container .scroll-target.section-three .bg-text .title-image .title, 
+.freshon-container .scroll-target.section-four .bg-text .title-image .title, 
+.freshon-container .scroll-target.section-five .bg-text .title-image .title {
+  width: 80%;
+  font-size: 80px;
+}
+.freshon-container .scroll-target.section-six .title-image .title,
+.freshon-container .scroll-target.section-seven .order-time{
+  width: 80%;
+}
+.freshon-container .scroll-target.section-three .slider .card,
+.freshon-container .scroll-target.section-four .slider .card,
+.freshon-container .scroll-target.section-five .slider .card {
+  width: 80%;
+}
+.freshon-container .scroll-target.section-six .title-image .title,
+.freshon-container .scroll-target.section-seven .order-time p {
+  width: 80%;
+}
+.freshon-container .scroll-target.section-seven .order-time p {
+  margin: 40px auto;
+}
+.freshon-container .scroll-target.section-six .title-image .title {
+  margin: 0 auto;
+}
+.freshon-container .scroll-target.section-seven .app-wrapper .app-button  {
+  padding: 5px;
+  font-size: 35px;
+  width: 240px;
+}
+.freshon-container .scroll-target.section-seven .app-wrapper .app-button img {
+  width: 30px;
+}
+.freshon-container .scroll-target.section-six h3{
+  font-size: 50px;
+}
+.freshon-container .scroll-target.section-seven h3 {
+  font-size: 65px;
+}
+.freshon-container .scroll-target.section-seven .contactus h3 {
+  margin: 30px auto;
+  margin-top: 6px;
+  font-size: 50px;
+}
+.freshon-container .scroll-target.section-seven .sub-text {
+  width: 100%;
+  float: left;
+  font-size: 30px;
+}
+.freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button img {
+  width: 40px;
+}
+.freshon-container .scroll-target.section-seven .mailphone-wrapper .link-button {
+  font-size: 25px;
+}
+.freshon-container .scroll-target.section-seven .contactus .address p {
+  font-size: 25px;
+  margin-top: 50px;
+}
+.freshon-container .scroll-target.section-seven .order-time p, 
+.freshon-container .scroll-target.section-six .title-image .title {
+  font-size: 35px;
+}
+.freshon-container .scroll-target.section-two,
+.freshon-container .scroll-target.section-three, 
+.freshon-container .scroll-target.section-four,
+.freshon-container .scroll-target.section-five {
+  height: 100vh;
+}
+.freshon-container .scroll-target.section-two .slider .card {
+  width: 90%;
+}
+.freshon-container {
+  box-shadow: 0px 28px 40px rgba(14, 14, 14, 0.6);
+}
+body {
+  background-color: #ccc;
+}
+.freshon-container .scroll-target.section-seven .title-image .title {
+  width: 100%;
+  position: relative;
+  top: 0%;
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+}
+.freshon-container .scroll-target.section-seven .title-image {
+  height: 60vh;
+}
+}
+
+
+/*preloader*/
+#preloader {
+  padding:0;
+  margin:0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background-color:#FFFFFF;
+}
+#preloader p {
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  margin: 0px auto;
+  position: absolute;
+  top:45%;
+  font-size: 30px;
+  color: #000;
+  font-family: 'Futuralight',sans-serif;
+  transform:translateY(-45%);
+  -webkit-transform:translateY(-45%);
+}
+#preloader p img {
+  width:350px;
+  height:117px;
+  position:relative;
+  bottom:30px;
+  max-width:100%;
+}
+.preloader {
+  width: 100%;
+  margin: 0px auto;
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  -webkit-transform:translateY(-50%);
+}
+.preloader img {
+  width: 80%;
+}
+@media only screen and (min-width: 600px){
+  .freshon-container .scroll-target.section-one .logo img {
+    width: 75%;
+  }
+  #preloader p img {
+    width: 500px;
+    height: auto;
+    position: relative;
+    bottom: 110px;
+    max-width: 100%;
+  }
+  .freshon-container .scroll-target.section-seven ul.bottom-menu li {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .bottom-menu li .tooltiptext {
+    width: 230px;
+    bottom: 100%;
+    height: 100px;
+  }
+  .bottom-menu li .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 4%;
+    border-width: 12px;
+    border-style: solid;
+    border-color: #FFFFFF transparent transparent transparent;
+  }
+  .bottom-menu li span.closeicon {
+    position: absolute;
+    right: 10px;
+    top: -1px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .bottom-menu li.terms .tooltiptext {
+    width: 200px;
+    bottom: 100%;
+    height: 110px;
+  }
+  .preloader b {
+    font-size: 30px !important;
+  }
+  .bottom-menu li .tooltiptext {
+    width: 200px;
+    height: 90px;
+  }
+}
+@media only screen and (min-width: 550px) and (orientation:landscape) {
+  .freshon-container .scroll-target.section-one .trucklogo img.truck {
+    width: 150px;
+  }
+  .preloader {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .freshon-container .preloader video {
+    width: 60%;
+  }
+  .freshon-container .preloader img {
+    width: 50%;
+  }
+  .freshon-container .scroll-target.section-six .order-time .ordernow {
+    width: 98%;
+  }
+  .freshon-container .scroll-target.section-six .order-time {
+    height: 70vh;
+  }
+  .freshon-container .scroll-target.section-six .title-image {
+    height: 30vh;
+  }
+}
+.div1 {
+     color: #ffffff;     
+     font-weight: bold;
+}
+.div2 {
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+.div1 {
+            width: 20px;
+             margin-right: 5px;
+             padding: 4px;
+             float: left;
+             font-size: 22px;
+             width: 130px;
+}
+
+.div2 {
+       width: 20px;
+             margin-right: 5px;
+             padding: 4px;
+             float: right;
+             font-size: 22px;
+             width: 130px;
+}
+
+
+.coming-soon-top1 {
+     color: black;
+}
+.coming-soon-top2 {
+    color: black;
+}
+
+.coming-soon-top1 {
+    margin-right: 5px;
+    padding: 4px;
+    font-size: 22px;
+    width: auto;
+    display: block;
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    color: #fff;
+     }
+
+.coming-soon-top2 {
+    padding: 4px;
+    font-size: 22px;
+    width: auto;
+    display: block;
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    color: #fff;
+    right: 20px;
+     }
